@@ -1,6 +1,6 @@
 <template>
   <div class="board">
-    <span>Cards not Matched</span>
+    <span>尚未匹配的卡牌对</span>
     <h2>{{ nonMatchedPairs }}</h2>
   </div>
 </template>

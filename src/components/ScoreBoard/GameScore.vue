@@ -1,6 +1,6 @@
 <template>
   <div class="score">
-    <span>Highest Record</span>
+    <span>最高分</span>
     <h2>{{ highestRecord }}</h2>
   </div>
 </template>

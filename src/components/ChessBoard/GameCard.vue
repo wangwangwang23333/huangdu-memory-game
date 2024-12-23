@@ -1,14 +1,14 @@
 <template>
   <div class="container" @click="doFlip">
     <div class="card" :class="{ flipped: card.flipped }">
-      <img v-if="card.name === '8-ball'" class="front" src="../../assets/8-ball.png" />
-      <img v-if="card.name === 'baked-potato'" class="front" src="../../assets/baked-potato.png" />
-      <img v-if="card.name === 'dinosaur'" class="front" src="../../assets/dinosaur.png" />
-      <img v-if="card.name === 'kronos'" class="front" src="../../assets/kronos.png" />
-      <img v-if="card.name === 'rocket'" class="front" src="../../assets/rocket.png" />
-      <img v-if="card.name === 'skinny-unicorn'" class="front" src="../../assets/skinny-unicorn.png" />
-      <img v-if="card.name === 'that-guy'" class="front" src="../../assets/that-guy.png" />
-      <img v-if="card.name === 'zeppelin'" class="front" src="../../assets/zeppelin.png" />
+      <img v-if="card.name === '8-ball'" class="front" src="../../assets/first.png" />
+      <img v-if="card.name === 'baked-potato'" class="front" src="../../assets/second.png" />
+      <img v-if="card.name === 'dinosaur'" class="front" src="../../assets/third.png" />
+      <img v-if="card.name === 'kronos'" class="front" src="../../assets/fourth.png" />
+      <img v-if="card.name === 'rocket'" class="front" src="../../assets/fifth.png" />
+      <img v-if="card.name === 'skinny-unicorn'" class="front" src="../../assets/sixth.png" />
+      <img v-if="card.name === 'that-guy'" class="front" src="../../assets/seventh.png" />
+      <img v-if="card.name === 'zeppelin'" class="front" src="../../assets/eighth.png" />
 
       <img class="back" src="../../assets/back.png" />
     </div>
