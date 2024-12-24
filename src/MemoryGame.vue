@@ -79,7 +79,7 @@ const doFilp = () => {
   } else {
     console.log(`There are ${realtimeNonMatchedPairs.value} pairs of cards not matched`)
   }
-  isFlipped.value = true
+  // isFlipped.value = true
 }
 </script>
 
