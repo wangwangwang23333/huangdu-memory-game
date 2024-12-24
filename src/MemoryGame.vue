@@ -16,11 +16,11 @@
     <!-- 背面内容 -->
     <div class="game-panel-back">
       <h2>黄渡游戏公司开发</h2>
-      <span
-        >访问官网：<a href="https://wangwangwang.website/huangdu-game/" target="_blank"
+      <div>
+        访问官网：<a href="https://wangwangwang.website/huangdu-game/" target="_blank"
           >https://wangwangwang.website/huangdu-game/</a
-        ></span
-      >
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -50,7 +50,7 @@ const handleMouseMove = (event: MouseEvent) => {
 
 // 检测鼠标释放
 const handleMouseUp = () => {
-  if (touchStartX.value - touchEndX.value > 50) {
+  if (touchStartX.value - touchEndX.value > 150) {
     // 左滑翻转
     doFilp()
   }
@@ -79,6 +79,7 @@ const doFilp = () => {
   } else {
     console.log(`There are ${realtimeNonMatchedPairs.value} pairs of cards not matched`)
   }
+  isFlipped.value = true
 }
 </script>
 
