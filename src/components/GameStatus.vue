@@ -1,9 +1,16 @@
 <template>
-  <div class="status-footer">
-    <span v-if="status === IStatus.READY">Ready</span>
-    <span v-if="status === IStatus.PLAYING">Playing</span>
-    <a v-if="status === IStatus.PASSED" @click.prevent.stop="reset">Play again</a>
-    <span class="time-cost">{{ timeCost }} s</span>
+  <div>
+    <div class="status-footer">
+      <span v-if="status === IStatus.READY">准备</span>
+      <span v-if="status === IStatus.PLAYING">游戏中</span>
+      <a v-if="status === IStatus.PASSED" @click.prevent.stop="reset">再次尝试</a>
+      <span class="time-cost">{{ timeCost }} s</span>
+    </div>
+    <!--分割线-->
+    <div style="border-top: 1px solid #000; margin-top: 5px"></div>
+    <div style="text-we">
+      <span>在翻小卡牌的时候，在卡牌上轻轻向左滑动哦～</span>
+    </div>
   </div>
 </template>
 
